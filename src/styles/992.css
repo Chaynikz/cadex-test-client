@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+
+    /* Form */
+
+    .main-form {
+        grid-column: 4 / 22;
+    }
+
+
+    /* ThreeScene */
+
+    .three-wrapper {
+        grid-column: 4 / 22;
+    }
+
+}

@@ -1,0 +1,15 @@
+@media (min-width: 576px) {
+
+    /* Form */
+    .main-form {
+        grid-template-rows: repeat( 6, 4vw );
+    }
+
+    .text-input {
+        min-width: 20px;
+        display: block;
+        padding: 8px;
+        font-size: 5vw;
+    }
+
+}

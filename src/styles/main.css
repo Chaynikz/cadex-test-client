@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: rgb(65, 67, 69);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: min-content auto;
+
+    /* border: 1px solid red; */
+}
+
+.grid-container-24 {
+    display: grid;
+    grid-template-columns: repeat( 24, 1fr );
+    grid-gap: 1vw 1vw;
+}
+
+
+/* Form */
+
+.main-form {
+    grid-column: 2 / 24;
+    margin-top: 4vw;
+
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr );
+    grid-template-rows: repeat( 6, 5vw );
+    grid-gap: 1vw 2vw;
+
+    /* border: 1px solid #00cc33; */
+}
+
+.text-input {
+    min-width: 20px;
+    display: block;
+    /* padding: 8px; */
+    padding: 10px 0 6px;
+    font-size: 6vw;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+}
+
+.text-input::-webkit-input-placeholder {
+    color: #ddd; 
+    font-size: 17px;
+    font-weight: 500;
+} 
+.text-input::-moz-placeholder {
+    color: #ddd; 
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+.text-input-length { grid-area: 1 / 1 / 3 / 4; }
+.text-input-width { grid-area: 3 / 1 / 5 / 4; }
+.text-input-height { grid-area: 5 / 1 / 7 / 4; }
+
+.form-btn {
+    display: block;
+    border: none;
+    font-size: 5vw;
+    background-color: #008ae6;
+    color: #fff;
+}
+
+.form-btn:hover {
+    background-color: #0099ff;
+    cursor: pointer;
+}
+
+.form-btn:disabled {
+    background-color: #858ea2;
+    cursor: default;
+}
+
+.form-btn-clear { grid-area: 1 / 4 / 4 / 7; }
+.form-btn-send { grid-area: 4 / 4 / 7 / 7; }
+
+.err-msg {
+    grid-column: 1 / 7;
+    font-size: 15px;
+    line-height: 19px;
+    color: #cd0034;
+
+    /* border: 1px solid #ff4d7a; */
+}
+
+
+
+/* ThreeScene */
+
+.three-wrapper {
+    grid-column: 2 / 24;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #49505f;
+    color: #ddd;
+    /* border: 1px solid #008ae6; */
+}
+
+.error-block {
+    text-align: center;
+    font-size: 17px;
+}
